@@ -119,7 +119,7 @@
 
   "buffers" : {
     "buffer0" : {
-      "uri" : "simpleMesh0.bin",
+      "uri" : "data:application/octet-stream;base64,AAABAAIAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/",
       "byteLength" : 108
     }
   },
