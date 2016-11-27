@@ -9,6 +9,7 @@ uniform vec4 u_ambient;
 uniform vec4 u_diffuse;
 uniform vec4 u_specular;
 uniform float u_shininess;
+uniform float u_opacity;
 
 varying vec3 v_light0Direction;
 
@@ -35,9 +36,9 @@ void main(void)
     }
     specular.rgb *= specularLight;
     diffuse.rgb *= diffuseLight;
-    color.rgb += ambient.xyz;
-    color.rgb += diffuse.xyz;
-    color.rgb += specular.xyz;
-    color.a = diffuse.a;
+    color.rgb += ambient.rgb;
+    color.rgb += diffuse.rgb;
+    color.rgb += specular.rgb;
+    color.a = diffuse.a * u_opacity;
     gl_FragColor = color;
 }

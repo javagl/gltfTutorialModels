@@ -33,11 +33,11 @@ void main(void)
         specularLight += lightColor * specularIntensity;
         diffuseLight += lightColor * max(dot(normal,l), 0.0) * attenuation;
     }
-    specular.xyz *= specularLight;
-    diffuse.xyz *= diffuseLight;
-    color.xyz += ambient.xyz;
-    color.xyz += diffuse.xyz;
-    color.xyz += specular.xyz;
-    color = vec4(color.rgb * diffuse.a, diffuse.a);
+    specular.rgb *= specularLight;
+    diffuse.rgb *= diffuseLight;
+    color.rgb += ambient.xyz;
+    color.rgb += diffuse.xyz;
+    color.rgb += specular.xyz;
+    color.a = diffuse.a;
     gl_FragColor = color;
 }

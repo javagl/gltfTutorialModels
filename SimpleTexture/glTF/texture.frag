@@ -4,9 +4,10 @@
 
 varying vec3 v_position;
 varying vec3 v_normal;
+varying vec2 v_texcoord0;
 
 uniform vec4 u_ambient;
-uniform vec4 u_diffuse;
+uniform sampler2D u_diffuse;
 uniform vec4 u_specular;
 uniform float u_shininess;
 
@@ -19,7 +20,7 @@ void main(void)
     vec3 diffuseLight = vec3(0.0, 0.0, 0.0);
     vec3 lightColor = vec3(1.0, 1.0, 1.0);
     vec4 ambient = u_ambient;
-    vec4 diffuse = u_diffuse;
+    vec4 diffuse = texture2D(u_diffuse, v_texcoord0);
     vec4 specular = u_specular;
 
     vec3 specularLight = vec3(0.0, 0.0, 0.0);
@@ -35,9 +36,9 @@ void main(void)
     }
     specular.rgb *= specularLight;
     diffuse.rgb *= diffuseLight;
-    color.rgb += ambient.xyz;
-    color.rgb += diffuse.xyz;
-    color.rgb += specular.xyz;
+    color.rgb += ambient.rgb;
+    color.rgb += diffuse.rgb;
+    color.rgb += specular.rgb;
     color.a = diffuse.a;
     gl_FragColor = color;
 }
