@@ -77,7 +77,7 @@
         },
         "diffuseParameter": {
           "type": 35678,
-          "value": "exampleTexture"
+          "value": [ "exampleTexture" ]
         },
         "specularParameter": {
           "type": 35666,
@@ -101,7 +101,8 @@
       "fragmentShader": "textureFragmentShader",
       "attributes": [
         "a_position",
-        "a_normal"
+        "a_normal",
+        "a_texcoord0"
       ]
     }
   },
@@ -169,8 +170,8 @@
       "componentType" : 5123,
       "count" : 6,
       "type" : "SCALAR",
-      "max" : [ 3.0 ],
-      "min" : [ 0.0 ]
+      "max" : [ 3 ],
+      "min" : [ 0 ]
     },
     "positionsAccessor" : {
       "bufferView" : "attributesBufferView",
