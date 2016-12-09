@@ -19,3 +19,6 @@ See the `README.md` in each model's directory for details.
 | [Simple Opacity](SimpleOpacity)                                           | ![](SimpleOpacity/screenshot/screenshot.png)                    | A simple scene with multiple nodes, meshes and materials, where the materials have different opacity values, ranging from fully transparent to fully opaque |
 | [Simple Texture](SimpleTexture)                                           | ![](SimpleTexture/screenshot/screenshot.png)                    | A single scene with a single node and a single mesh with a single mesh primitive, with a material that contains a single texture |
 | [Cameras](Cameras)                                                        | ![](Cameras/screenshot/screenshot.png)                          | A single scene with a single node and a single mesh with a single mesh primitive, without a material, but with two different cameras |
+| [Simple Skin](SimpleSkin)                                                 | ![](SimpleSkin/screenshot/screenshot.gif)                       | A simple scene with very basic vertex skinning |
+
+
