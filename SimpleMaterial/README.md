@@ -1,4 +1,4 @@
-# TriangleWithSimpleMaterial
+# SimpleMaterial
 
 ## Screenshot
 
