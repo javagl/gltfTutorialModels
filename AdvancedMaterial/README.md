@@ -1,4 +1,4 @@
-# SimpleMeshesWithAdvancedMaterial
+# AdvancedMaterial
 
 ## Screenshot
 
