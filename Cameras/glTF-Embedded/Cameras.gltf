@@ -80,8 +80,8 @@
       "componentType" : 5123,
       "count" : 6,
       "type" : "SCALAR",
-      "max" : [ 3.0 ],
-      "min" : [ 0.0 ]
+      "max" : [ 3 ],
+      "min" : [ 0 ]
     },
     "positionsAccessor" : {
       "bufferView" : "attributesBufferView",
