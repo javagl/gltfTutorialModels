@@ -1,5 +1,14 @@
 Sample models for the glTF tutorial
 
+# NOTE: This repository is no longer maintained!
+
+The sample models that are contained in this repository are moved
+to the official Khronos glTF sample models repository at 
+[https://github.com/KhronosGroup/glTF-Sample-Models](https://github.com/KhronosGroup/glTF-Sample-Models).
+
+---
+
+
 These sample models are used in the glTF tutorial. They are targeting glTF version 1.1.
 The `.gltf` files of these models are edited *manually*, to make the names and order 
 of the properties match the descriptions in the tutorial. 
