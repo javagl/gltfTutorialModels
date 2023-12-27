@@ -1,7 +1,12 @@
+
 # glTF Sample Models
 
-These sample models are used in the glTF tutorial. They are targeting glTF version 1.1
-and will be updated to version 2.0 when the specification is finalized.
+These sample models had been used the glTF tutorial when it was initially created.
+Back then, the models had been targeting glTF version 1.1.
+
+Updated models for glTF 2.0 are now maintained as part of the [glTF-Sample-Assets](https://github.com/KhronosGroup/glTF-Sample-Assets) repository.
+
+## Summary
 
 The `.gltf` files of these models are edited *manually*, to make the names and order 
 of the properties match the descriptions in the tutorial. 
